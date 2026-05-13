@@ -1,0 +1,157 @@
+.footer {
+    position: relative;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 80px 8%;
+    margin-top: 80px;
+    z-index: 1;
+    color: #111;
+
+    overflow: hidden;
+}
+
+/* OVERLAY */
+.footer-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+/* MAIN CONTENT */
+.footer-content {
+    position: relative;
+    z-index: 2;
+pointer-events: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 70px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADING */
+.footer-heading {
+    font-size: 42px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+/* SOCIALS */
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
+
+/* ICON */
+.footer-icon {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+
+    background: #111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+    position: relative;
+    z-index: 5;
+}
+
+.footer-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* TITLES */
+.footer-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+
+/* LINKS */
+.footer-link {
+  display: block;
+
+  margin-bottom: 12px;
+
+  cursor: pointer;
+
+  color: #333;
+
+  transition: 0.3s;
+
+  position: relative;
+  z-index: 5;
+}
+
+.footer-link:hover {
+    color: #000;
+    transform: translateX(4px);
+}
+
+/* 📱 TABLET */
+@media (max-width: 900px) {
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 60px 6%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-heading {
+        font-size: 32px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}

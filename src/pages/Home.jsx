@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Home.css";
+import Footer from "../components/Footer";
 import PropertyCard from "../components/PropertyCard";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
@@ -111,6 +112,7 @@ function Home({ properties }) {
           </>
         )}
       </div>
+      
     </div>
   );
 }
