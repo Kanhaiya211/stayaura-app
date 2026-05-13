@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-function Footer() {
+function FooterNew() {
     const navigate = useNavigate();
     return (
         <div className="footer">
