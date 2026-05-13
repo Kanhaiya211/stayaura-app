@@ -143,6 +143,7 @@ pointer-events: auto;
     .footer-content {
         grid-template-columns: 1fr;
         gap: 35px;
+        color: #000;
     }
 
     .footer-heading {
