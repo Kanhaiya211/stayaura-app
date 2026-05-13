@@ -202,4 +202,4 @@ function Footer() {
 // }
 
 
-export default Footer;
+export default FooterNew;

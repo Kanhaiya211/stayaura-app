@@ -12,7 +12,8 @@ import PropertyDetails from "./pages/PropertyDetails";
 import Admin from "./pages/Admin";
 import Properties from "./pages/Properties";
 
-import Footer from "./components/Footer";
+import Footer from "./components/FooterNew";
+import FooterNew from "./components/FooterNew";
 
 function AppContent() {
 
@@ -79,7 +80,7 @@ function AppContent() {
 
       </Routes>
 
-      {!hideFooter && <Footer />}
+      {!hideFooter && <FooterNew />}
 
     </>
   );
